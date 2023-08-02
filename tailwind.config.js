@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     colors: {
       Light_Lightness_Yellow_0: '#FACC15',
-      Light_Lightness_Purple_0: '#6366F1',
-      Light_Lightness_Purple_1: '#4F46E5',
-      Light_Lightness_Purple_2: '#818CF8',
+      Light_Lightness_Purple_0: '#818CF8',
+      Light_Lightness_Purple_1: '#6366F1',
+      Light_Lightness_Purple_2: '#4F46E5',
       Light_Lightness_Purple_3: '#E0E7FF',
       Light_Lightness_0: '#020113',
       Light_Lightness_1: '#111827',
