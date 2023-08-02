@@ -19,7 +19,7 @@ module.exports = {
       Light_Lightness_4: '#4B5563',
       Light_Lightness_5: '#F9FAFB',
       Light_Lightness_white: '#FFFFFF',
-      
+      Dark_Darkness_black: '#000000',
     },
     extend: {
       backgroundImage: {
