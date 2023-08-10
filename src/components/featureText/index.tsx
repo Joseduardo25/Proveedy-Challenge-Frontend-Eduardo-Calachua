@@ -5,12 +5,10 @@ interface Prop {
   title: string;
   description: string;
   children: JSX.Element;
-  buttonContent: string;
-  buttonBg: string;
   styles?: string;
 }
 
-const FeatureText = ({link, title, description, children, buttonContent, buttonBg, styles}:Prop) => {
+const FeatureText = ({link, title, description, children, styles}:Prop) => {
   return (
     <div className={`${styles} flex flex-col items-left w-[507px]`}>
       <a className='text-Light_Lightness_Purple_2 text-[16px]' href='#'>{link}</a>
@@ -23,13 +21,6 @@ const FeatureText = ({link, title, description, children, buttonContent, buttonB
       <div>
         {children}
       </div>
-      <ButtonPrimary
-      borderRadius='rounded-lg'
-      fill
-      content={buttonContent}
-      bg={buttonBg||'bg-Light_Lightness_Purple_0'}
-      fontSize='text-[16px]'
-      />
     </div>
   )
 }
