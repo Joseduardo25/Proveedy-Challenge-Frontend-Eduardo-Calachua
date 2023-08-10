@@ -16,7 +16,7 @@ const Header = () => {
                 Business
               </a>
             </li>
-            <li className='pr-[24px] text-[14px]'>
+            <li className='pr-[44px] text-[14px]'>
               <a>
                 Education
               </a>
@@ -30,12 +30,14 @@ const Header = () => {
         </div>
         <div className='flex items-center gap-2 pr-10'>
           <ButtonPrimary
+            style='text-Light_Lightness_1'
             bg='bg-Light_Lightness_Yellow_0'
             fill
             content='Upgrade'
             icon='icon-lightning'
           />
           <ButtonPrimary
+            style='text-Light_Lightness_white'
             bg='bg-Light_Lightness_Purple_0'
             fill
             content='Create Quiz'
@@ -51,6 +53,7 @@ const Header = () => {
             icon='icon-profile'
             bg='bg-Light_Lightness_Purple_0'
             fullRadius
+            borderRadius
           />
         </div>
       </nav>
