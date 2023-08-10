@@ -1,4 +1,5 @@
 interface Prop{
+    style?: string,
     icon?: string,
     content?: string,
     fontSize?: string,
@@ -6,17 +7,20 @@ interface Prop{
     fullRadius?: boolean,
     fill?: boolean,
     padding?: string,
-    borderRadius?: string,
+    borderRadius?: boolean,
+    width?: boolean
 }
 
-const ButtonPrimary = ({icon, content, bg, fullRadius, fill, fontSize, padding, borderRadius}:Prop) => {
+const ButtonPrimary = ({style, icon, content, bg, fullRadius, fill, fontSize, padding, borderRadius, width}:Prop) => {
   return (
     <button
-      className={`
-        ${fill ? bg : 'bg-transparent text-white'} 
-        ${fullRadius ? 'rounded-full w-[40px] flex justify-center items-center' : 'rounded-lg'}
-        ${padding || 'px-4 py-3' }
-        ${borderRadius || 'rounded-xl'}
+    className={`
+    ${fill ? bg : 'bg-transparent text-white'} 
+    ${fullRadius ? 'rounded-full w-[39px] flex justify-center items-center' : 'rounded-lg'}
+    ${padding || 'px-4 py-3' }
+    ${borderRadius ||'rounded-full'}
+    ${width || 'w-[auto]'}
+    ${style}
         `}
     >
       {
