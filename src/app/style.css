@@ -51,6 +51,7 @@
 }
 .icon-plus:before {
   content: "\e908";
+  color: black
 }
 .icon-profile:before {
   content: "\e909";
